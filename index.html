@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Alex Developer</title>
+    <meta name="description" content="Modern frontend portfolio with projects, skills, and contact details.">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700;800&family=Space+Grotesk:wght@500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <div class="bg-grid" aria-hidden="true"></div>
+    <header class="header">
+        <div class="container nav">
+            <a class="logo" href="#home">Alex.dev</a>
+            <nav aria-label="Main navigation">
+                <ul class="menu">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#skills">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="home">
+        <section class="hero container">
+            <div class="hero-copy reveal">
+                <p class="badge">Frontend Engineer</p>
+                <h1>Building dark, sharp and high-performance web experiences.</h1>
+                <p class="hero-text">
+                    I design and code websites that look premium, stay fast under load, and feel effortless on every screen size.
+                </p>
+                <div class="hero-actions">
+                    <a class="btn btn-primary" href="#projects">View projects</a>
+                    <a class="btn btn-secondary" href="#contact">Let's talk</a>
+                </div>
+            </div>
+            <aside class="hero-panel reveal">
+                <p class="panel-title">Open for new work</p>
+                <p>
+                    Available for freelance projects, landing pages, and product UI implementation with a focus on clean UX.
+                </p>
+                <ul class="panel-list">
+                    <li>Fast delivery</li>
+                    <li>Mobile-first</li>
+                    <li>Production-ready code</li>
+                </ul>
+            </aside>
+        </section>
+
+        <section class="section container reveal" id="about">
+            <h2>About me</h2>
+            <p>
+                I am a frontend developer focused on HTML, CSS, JavaScript, and interface architecture.
+                My goal is to ship elegant products that load quickly and feel intuitive from day one.
+            </p>
+        </section>
+
+        <section class="section container" id="projects">
+            <div class="section-head reveal">
+                <h2>Featured projects</h2>
+                <a class="text-link" href="#contact">Request full case studies</a>
+            </div>
+            <div class="cards">
+                <article class="card">
+                    <h3>Education Landing Page</h3>
+                    <p>Conversion-focused landing page with motion effects, forms, and clear CTA flow.</p>
+                    <p class="card-tags">HTML5 · CSS3 · JavaScript</p>
+                </article>
+                <article class="card">
+                    <h3>Fashion Store Frontend</h3>
+                    <p>Responsive product catalog, clean filters, and optimized browsing experience.</p>
+                    <p class="card-tags">UI Systems · Responsive · SEO</p>
+                </article>
+                <article class="card">
+                    <h3>Editorial Content Hub</h3>
+                    <p>Readable typography, structured navigation, and scalable layout components.</p>
+                    <p class="card-tags">Grid · Accessibility · Performance</p>
+                </article>
+            </div>
+        </section>
+
+        <section class="section container" id="skills">
+            <h2 class="reveal">Skills</h2>
+            <ul class="skills">
+                <li>Semantic HTML5</li>
+                <li>CSS3 / Grid / Flexbox</li>
+                <li>JavaScript (ES6+)</li>
+                <li>Adaptive interfaces</li>
+                <li>Git / GitHub workflow</li>
+                <li>Performance optimization</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer class="footer" id="contact">
+        <div class="container footer-inner">
+            <div class="reveal">
+                <h2>Contact</h2>
+                <p>If you have a project in mind, send a message and I will reply quickly.</p>
+            </div>
+            <div class="contacts reveal">
+                <a href="mailto:alex@example.com">alex@example.com</a>
+                <a href="https://t.me/username">t.me/username</a>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
