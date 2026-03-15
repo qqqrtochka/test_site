@@ -1,0 +1,63 @@
+<!doctype html>
+<html lang="ru">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>JavaScript Online Compiler</title>
+  <link rel="stylesheet" href="style.css" />
+  <!-- Monaco Editor (VS Code editor) via CDN -->
+  <script src="https://cdn.jsdelivr.net/npm/monaco-editor@0.52.0/min/vs/loader.js" defer></script>
+  <script src="script.js" defer></script>
+</head>
+
+<body>
+  <div class="app">
+    <header class="header">
+      <div class="title">
+        <h1>JavaScript Online Compiler</h1>
+        <p class="subtitle">IDE - редактор JavaScript</p>
+      </div>
+
+      <div class="actions">
+        <button id="runBtn" class="btn btn--primary" type="button" title="Ctrl/Cmd + Enter">
+          Run
+        </button>
+        <button id="themeBtn" class="btn" type="button" title="Random theme">
+          Theme
+        </button>
+        <button id="clearBtn" class="btn" type="button">Clear</button>
+      </div>
+    </header>
+
+    <main class="split">
+      <section class="panel">
+        <div class="panel__header">Editor</div>
+        <!-- Monaco mounts into this container -->
+        <div id="editor" class="editor" aria-label="JavaScript code editor"></div>
+      </section>
+
+      <section class="panel">
+        <div class="panel__header">
+          <div class="tabs" role="tablist" aria-label="Правая панель">
+            <button id="tabOutput" class="tab tab--active" type="button" role="tab" aria-selected="true"
+              aria-controls="output">
+              Вывод
+            </button>
+            <button id="tabNotes" class="tab" type="button" role="tab" aria-selected="false" aria-controls="notes">
+              Заметки
+            </button>
+          </div>
+        </div>
+
+        <div class="panel__content">
+          <pre id="output" class="output" aria-live="polite"></pre>
+          <textarea id="notes" class="notes" spellcheck="false"
+            placeholder="Ваши заметки (сохраняются в браузере)..." hidden></textarea>
+        </div>
+      </section>
+    </main>
+  </div>
+</body>
+
+</html>
